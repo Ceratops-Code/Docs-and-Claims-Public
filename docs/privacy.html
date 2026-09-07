@@ -16,7 +16,8 @@
 
       <section aria-labelledby="access">
         <h2 id="access">Access and use</h2>
-        <p>With authorization, the integration checks the connected account address and reads matching verification messages to retrieve sign-in codes. Gmail permission is read-only and covers the mailbox, not just matching messages. It does not permit sending, changing, or deleting email.</p>
+        <p>With authorization, the integration checks the connected account address and reads matching verification messages to retrieve sign-in codes. Before entering an accepted code into the sign-in page, it marks only that verification message as read by removing Gmail's Unread label. Other messages and labels are left unchanged.</p>
+        <p>The Gmail permission (<code>gmail.modify</code>) covers the entire mailbox, not just matching messages. It also permits other actions, including sending email and moving messages to Trash. The integration does not use those capabilities: it does not send, archive, or delete email, and its only email change is marking the accepted verification message as read.</p>
       </section>
 
       <section aria-labelledby="sharing">
