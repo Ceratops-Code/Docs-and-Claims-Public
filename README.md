@@ -1,6 +1,6 @@
 # Docs-and-Claims public information
 
-Public homepage and Gmail privacy notice for Docs-and-Claims.
+Public homepage and Gmail privacy notice for Docs-and-Claims private app.
 The application is not distributed in this repository.
 
 GitHub Pages serves the static files in `docs/` from `main`.
